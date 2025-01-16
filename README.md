@@ -11,7 +11,12 @@ Local versions of plugins are symlinked, with the script `symlinks.ps1` to creat
 - This repository is cloned to `C:\Users\{username}\LocalSites\vanilla-playground`
 - Plugins to be symlinked are cloned into `C:\Users\{username}\PHPStormProjects\{plugin-name}`
 
-To create or update the symlinks, in Powershell run:
+To create or update the symlinks, in Powershell with admin privileges run:
 ```PowerShell
 .\symlinks.ps1
+```
+
+Or in WSL1 Bash (also run with admin privileges):
+```bash
+powershell.exe -File symlinks.ps1
 ```

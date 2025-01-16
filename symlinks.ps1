@@ -3,7 +3,7 @@
 $symlinks = @(
     @{ destination = ".\app\public\wp-content\plugins\doublee-breadcrumbs"; source = "..\..\PHPStormProjects\doublee-breadcrumbs" },
     @{ destination = ".\app\public\wp-content\plugins\doublee-base-plugin"; source = "..\..\PHPStormProjects\doublee-base-plugin" },
-    @{ destination = ".\app\public\wp-content\plugins\comet-components-wp"; source = "..\..\PHPStormProjects\comet-components\dist\comet-components-wp" }
+    @{ destination = ".\app\public\wp-content\plugins\comet-components-wp"; source = "..\..\PHPStormProjects\comet-components\packages\comet-components-wp" }
 )
 
 # Function to create directories if they don't exist
@@ -63,9 +63,10 @@ function Remove-Symlink {
     if (Test-Path $symlinkPath) {
         $item = Get-Item $symlinkPath -Force
         if ($item.LinkType -eq "SymbolicLink") {
-            Remove-Item -Path $symlinkPath -Force
+            Remove-Item -Path $symlinkPath -Recurse
             Write-Host "Deleted symlink: $symlinkPath"
-        } else {
+        }
+        else {
             Write-Host "Warning: Path exists but is not a symlink, skipping deletion: $symlinkPath"
         }
     } else {
@@ -76,7 +77,7 @@ function Remove-Symlink {
 # Iterate over each pair of real and symlink directories/files
 foreach ($link in $symlinks) {
     # Safely remove existing symlink if it exists
-    Remove-Symlink -symlinkPath $link.symlink
+    Remove-Symlink -symlinkPath $link.destination
     # Create/re-create the symlink
     Create-Symlink -realPath $link.source -symlinkPath $link.destination
 }
