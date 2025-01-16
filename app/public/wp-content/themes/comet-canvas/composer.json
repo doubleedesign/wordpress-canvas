@@ -1,0 +1,17 @@
+{
+    "name": "doubleedesign/comet-canvas",
+    "type": "wordpress-theme",
+	"version": "0.0.1",
+    "autoload": {
+        "psr-4": {
+            "Doubleedesign\\CometCanvas\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leesa Ward",
+            "email": "leesa@doubleedesign.com.au"
+        }
+    ],
+    "require": {}
+}
