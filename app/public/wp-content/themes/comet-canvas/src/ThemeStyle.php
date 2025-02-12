@@ -8,8 +8,16 @@ class ThemeStyle {
 
 	function __construct() {
 		add_action('init', [$this, 'set_css_variables_from_theme_json'], 20, 1);
-		add_action('wp_head', [$this, 'add_css_variables_to_head'], 20);
-		add_action('wp_enqueue_scripts', [$this, 'enqueue_stylesheets'], 20);
+		add_action('wp_head', [$this, 'add_css_variables_to_head'], 25);
+		add_action('wp_enqueue_scripts', [$this, 'enqueue_theme_stylesheets'], 20);
+
+		add_action('admin_init', [$this, 'set_css_variables_from_theme_json'], 20, 1);
+		add_action('admin_head', [$this, 'add_css_variables_to_head'], 25);
+
+		if(is_admin()) {
+			add_action('enqueue_block_assets', [$this, 'enqueue_theme_stylesheets'], 20);
+			add_action('enqueue_block_assets', [$this, 'add_css_variables_to_block_editor'], 25);
+		}
 	}
 
 	function set_css_variables_from_theme_json(): void {
@@ -35,7 +43,12 @@ class ThemeStyle {
 		echo '<style>:root {' . $this->embedded_css . '}</style>';
 	}
 
-	function enqueue_stylesheets(): void {
+	function add_css_variables_to_block_editor(): void {
+		// Attaching this to comet-global-styles ensures it overrides Comet's global.css
+		wp_add_inline_style('comet-global-styles', ":root { {$this->embedded_css} }");
+	}
+
+	function enqueue_theme_stylesheets(): void {
 		$parent = get_template_directory(). '/style.css';
 		$child = get_stylesheet_directory() . '/style.css';
 
