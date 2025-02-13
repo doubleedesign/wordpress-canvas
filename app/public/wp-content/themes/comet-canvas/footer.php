@@ -1,10 +1,12 @@
 <?php
+use Doubleedesign\Comet\Core\{Menu, SiteFooter};
 use Doubleedesign\CometCanvas\NavMenus;
 
 $menuItems = NavMenus::get_simplified_nav_menu_items_by_location('footer');
-// TODO: Footer component
-?>
+$menuComponent = new Menu(['context' => 'site-footer'], $menuItems);
+$footerComponent = new SiteFooter(['backgroundColor' => 'dark'], [$menuComponent]);
+$footerComponent->render();
 
-<?php wp_footer(); ?>
+wp_footer(); ?>
 </body>
 </html>

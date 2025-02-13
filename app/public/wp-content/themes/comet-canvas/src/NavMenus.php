@@ -150,6 +150,7 @@ class NavMenus {
 					$post_id = $current->ID;
 					if ($post_id == $item->object_id) {
 						$item->classes[] = 'current-menu-item';
+						$item->current = true;
 					}
 					if ($post_id == $item->post_parent) {
 						$item->classes[] = 'current-menu-parent';
@@ -158,6 +159,7 @@ class NavMenus {
 				else if (isset($current->taxonomy) && $current->taxonomy == 'category') {
 					if ($item->object_id == PAGE_FOR_POSTS || $item->object_id == $default_category_id) {
 						$item->classes[] = 'current-menu-item';
+						$item->current = true;
 					}
 				}
 				else if (isset($current->post_type) && $current->post_type == 'post') {
@@ -172,6 +174,7 @@ class NavMenus {
 				}
 				else if ($item->type == 'post_type_archive' && $current->name == $item->object) {
 					$item->classes[] = 'current-menu-item';
+					$item->current = true;
 				}
 
 
@@ -191,14 +194,19 @@ class NavMenus {
 
 	static function get_simplified_nav_menu_items_by_location(string $location) {
 		$items = self::get_nav_menu_items_by_location($location);
-
 		$result = array_reduce($items, function($acc, $item) {
 			if($item->menu_item_parent > 0) {
-				$acc[$item->menu_item_parent]['classes'][] = 'current-menu-parent';
 				$acc[$item->menu_item_parent]['children'][] = [
 					'title' => $item->title,
-					'url'   => $item->url,
-					'classes' => array_filter($item->classes, fn($class) => !empty($class))
+					'classes'    => array_filter($item->classes, fn($class) => !empty($class)),
+					'link_attributes' => [
+						'href'   => $item->url,
+						'target' => $item->target,
+						'title'  => $item->attr_title,
+						'rel'    => $item->xfn,
+						'classes' => [],
+						'aria-current' => $item->current ? 'page' : null
+					]
 				];
 
 				return $acc;
@@ -206,8 +214,15 @@ class NavMenus {
 
 			$acc[$item->ID] = [
 				'title' => $item->title,
-				'url'   => $item->url,
 				'classes' => array_filter($item->classes, fn($class) => !empty($class)),
+				'link_attributes' => [
+					'href'   => $item->url,
+					'target' => $item->target,
+					'title'  => $item->attr_title,
+					'rel'    => $item->xfn,
+					'classes' => [],
+					'aria-current' => $item->current ? 'page' : null
+				],
 				'children' => []
 			];
 
