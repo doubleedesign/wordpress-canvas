@@ -65,7 +65,8 @@ function Remove-Symlink {
         if ($item.LinkType -eq "SymbolicLink") {
             Remove-Item -Path $symlinkPath -Recurse
             Write-Host "Deleted symlink: $symlinkPath"
-        } else {
+        }
+        else {
             Write-Host "Warning: Path exists but is not a symlink, skipping deletion: $symlinkPath"
         }
     } else {
