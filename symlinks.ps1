@@ -3,7 +3,8 @@
 $symlinks = @(
     @{ destination = ".\app\public\wp-content\plugins\doublee-breadcrumbs"; source = "..\..\PHPStormProjects\doublee-breadcrumbs" },
     @{ destination = ".\app\public\wp-content\plugins\doublee-base-plugin"; source = "..\..\PHPStormProjects\doublee-base-plugin" },
-    @{ destination = ".\app\public\wp-content\plugins\comet-components-wp"; source = "..\..\PHPStormProjects\comet-components\packages\comet-components-wp" }
+    @{ destination = ".\app\public\wp-content\plugins\comet-plugin"; source = "..\..\PHPStormProjects\comet-components\packages\comet-plugin" }
+    @{ destination = ".\app\public\wp-content\themes\comet-canvas"; source = "..\..\PHPStormProjects\comet-components\packages\comet-canvas" }
 )
 
 # Function to create directories if they don't exist
