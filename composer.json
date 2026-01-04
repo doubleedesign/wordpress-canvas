@@ -1,0 +1,130 @@
+{
+	"name": "doubleedesign/vanilla-playground",
+	"type": "project",
+	"version": "2.0.0",
+	"homepage": "https://github.com/doubleedesign/vanilla-playground",
+	"authors": [
+		{
+			"name": "Leesa Ward",
+			"email": "leesa@doubleedesign.com.au"
+		}
+	],
+	"require": {
+		"php": ">=8.3",
+		"johnpbloch/wordpress": "^6.9",
+		"johnpbloch/wordpress-core-installer": "^2.0",
+		"composer/installers": "^2.0",
+		"doubleedesign/comet-canvas-blocks": "*",
+		"doubleedesign/comet-plugin-blocks": "*",
+		"doubleedesign/comet-calendar": "*",
+		"doubleedesign/doublee-breadcrumbs": "*",
+		"doubleedesign/doublee-base-plugin": "*",
+		"doubleedesign/acf-advanced-image-field": "*",
+		"doubleedesign/doublee-tinymce": "*",
+		"doubleedesign/doublee-ninja-markup": "*",
+		"wpackagist-plugin/ninja-forms": "dev-trunk",
+		"wpackagist-plugin/autodescription": "dev-trunk"
+	},
+	"require-dev": {
+		"doubleedesign/doublee-local-dev": "dev-master"
+	},
+	"replace": {
+		"doubleedesign/comet-components-core": "*"
+	},
+	"repositories": [
+		{
+			"name": "wpackagist",
+			"type": "composer",
+			"url": "https://wpackagist.org",
+			"only": [
+				"wpackagist-plugin/*",
+				"wpackagist-theme/*"
+			]
+		},
+		{
+			"type": "path",
+			"url": "../comet-components/packages/comet-plugin-blocks",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "path",
+			"url": "../comet-components/packages/comet-canvas-blocks",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "path",
+			"url": "../comet-components/packages/comet-calendar",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "path",
+			"url": "../doublee-breadcrumbs",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "path",
+			"url": "../doublee-base-plugin",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "path",
+			"url": "../acf-advanced-image-field",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "path",
+			"url": "../doublee-tinymce",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "path",
+			"url": "../doublee-ninja-markup",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "path",
+			"url": "../doublee-local-dev",
+			"options": {
+				"symlink": true
+			}
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/doubleedesign/baguetteBox.js"
+		}
+	],
+	"extra": {
+		"wordpress-install-dir": "app",
+		"installer-paths": {
+			"app/wp-content/plugins/{$name}/": [
+				"type:wordpress-plugin"
+			],
+			"app/wp-content/themes/{$name}/": [
+				"type:wordpress-theme"
+			]
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"johnpbloch/wordpress-core-installer": true,
+			"composer/installers": true
+		},
+		"optimize-autoloader": true
+	}
+}

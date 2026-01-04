@@ -1,0 +1,632 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "31b6b68109066f6ab3b9f258d2a76998",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "12fb2dfe5e16183de69e784a7b84046c43d97e8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/12fb2dfe5e16183de69e784a7b84046c43d97e8e",
+                "reference": "12fb2dfe5e16183de69e784a7b84046c43d97e8e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.10.27 || ^2.7",
+                "composer/semver": "^1.7.2 || ^3.4.0",
+                "phpstan/phpstan": "^1.11",
+                "phpstan/phpstan-phpunit": "^1",
+                "symfony/phpunit-bridge": "^7.1.1",
+                "symfony/process": "^5 || ^6 || ^7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                },
+                "plugin-modifies-install-path": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "concreteCMS",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "matomo",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "pantheon",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "tastyigniter",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v2.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-06-24T20:46:46+00:00"
+        },
+        {
+            "name": "doubleedesign/acf-advanced-image-field",
+            "version": "0.0.3",
+            "dist": {
+                "type": "path",
+                "url": "../acf-advanced-image-field",
+                "reference": "d12b44818d8467fc40193bbfae8de57f07cf566b"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Doubleedesign\\ACF\\AdvancedImageField\\": [
+                        "src/",
+                        "src/types"
+                    ]
+                }
+            },
+            "authors": [
+                {
+                    "name": "Leesa Ward",
+                    "email": "leesa@doubleedesign.com.au"
+                }
+            ],
+            "description": "Enhanced image field for Advanced Custom Fields with aspect ratio and focal point settings + real-time in-editor preview.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "doubleedesign/comet-calendar",
+            "version": "0.0.4",
+            "dist": {
+                "type": "path",
+                "url": "../comet-components/packages/comet-calendar",
+                "reference": "8e7a72006c34de19dea34ee62077b4b911bb0670"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Doubleedesign\\Comet\\WordPress\\Calendar\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Leesa Ward",
+                    "email": "leesa@doubleedesign.com.au"
+                }
+            ],
+            "description": "WordPress plugin for centrally managing events and displaying them using Comet Components.",
+            "homepage": "https://cometcomponents.io",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "doubleedesign/comet-canvas-blocks",
+            "version": "0.5.0",
+            "dist": {
+                "type": "path",
+                "url": "../comet-components/packages/comet-canvas-blocks",
+                "reference": "bc81d00fc17bdec45dad5738df69c0c545c0c8b5"
+            },
+            "type": "wordpress-theme",
+            "autoload": {
+                "psr-4": {
+                    "Doubleedesign\\CometCanvas\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Leesa Ward",
+                    "email": "leesa@doubleedesign.com.au"
+                }
+            ],
+            "description": "WordPress parent theme to support the intended implementation of Comet Components in WordPress with the block editor.",
+            "homepage": "https://cometcomponents.io",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "doubleedesign/comet-plugin-blocks",
+            "version": "0.5.0",
+            "dist": {
+                "type": "path",
+                "url": "../comet-components/packages/comet-plugin-blocks",
+                "reference": "907423402abf9afa9f9bffb21cfac3031a3757f8"
+            },
+            "require": {
+                "doubleedesign/comet-components-core": "0.3.0"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Doubleedesign\\Comet\\WordPress\\": "src/"
+                }
+            },
+            "archive": {
+                "exclude": [
+                    "src/*.scss",
+                    "src/*.css.map"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Leesa Ward",
+                    "email": "leesa@doubleedesign.com.au"
+                }
+            ],
+            "description": "WordPress plugin implementing the Comet Components library and associated block editor customisations.",
+            "homepage": "https://cometcomponents.io",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "doubleedesign/doublee-base-plugin",
+            "version": "3.0.0",
+            "dist": {
+                "type": "path",
+                "url": "../doublee-base-plugin",
+                "reference": "5419ceb40050de445dd26bac3f8f6fcd58d6aff9"
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Doubleedesign\\BasePlugin\\": [
+                        "src/"
+                    ],
+                    "Doubleedesign\\BasePlugin\\Tests\\": [
+                        "tests/"
+                    ]
+                }
+            },
+            "authors": [
+                {
+                    "name": "Leesa Ward",
+                    "email": "leesa@doubleedesign.com.au"
+                }
+            ],
+            "homepage": "https://github.com/doubleedesign/doublee-base-plugin",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "doubleedesign/doublee-breadcrumbs",
+            "version": "2.0.0",
+            "dist": {
+                "type": "path",
+                "url": "../doublee-breadcrumbs",
+                "reference": "a844ca99e9de8740f7fcb16903c5c96ea8a5ef34"
+            },
+            "require-dev": {
+                "brain/monkey": "^2.6",
+                "pestphp/pest": "^3.8.2"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Doubleedesign\\Breadcrumbs\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Leesa Ward",
+                    "email": "leesa@doubleedesign.com.au"
+                }
+            ],
+            "homepage": "https://github.com/doubleedesign/doublee-breadcrumbs",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "doubleedesign/doublee-ninja-markup",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../doublee-ninja-markup",
+                "reference": "276c1d067f520b9b938ef7c57635077450379b55"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "doubleedesign\\DoubleeNinjaMarkup\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Leesa Ward",
+                    "email": "leesa@doubleedesign.com.au"
+                }
+            ],
+            "description": "Overrides Ninja Forms' front-end HTML markup with BEM-style class names, and provides some base CSS to match.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "doubleedesign/doublee-tinymce",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../doublee-tinymce",
+                "reference": "3c33f3944ac050678717d131928ec6f926a6d989"
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*"
+            },
+            "require-dev": {
+                "brain/monkey": "^2.6",
+                "pestphp/pest": "^4.2",
+                "sirbrillig/spies": "^1.10"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "classmap": [
+                    "src/Miniblocks/",
+                    "src/Miniblocks/**/",
+                    "tests/"
+                ],
+                "psr-4": {
+                    "Doubleedesign\\DoubleeTinymce\\": [
+                        "src/",
+                        "src/Miniblocks/",
+                        "src/Miniblocks/ButtonGroup",
+                        "src/Miniblocks/Callout",
+                        "src/Miniblocks/Pullquote",
+                        "src/Tables"
+                    ],
+                    "Doubleedesign\\DoubleeTinymce\\Tests\\": [
+                        "tests/"
+                    ]
+                }
+            },
+            "authors": [
+                {
+                    "name": "Leesa Ward",
+                    "email": "leesa@doubleedesign.com.au"
+                }
+            ],
+            "description": "Customised configuration and plugins for WordPress/ClassicPress websites by Double-E Design.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "johnpbloch/wordpress",
+            "version": "6.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress.git",
+                "reference": "fbc8bf2209d0ab8d579d937b3df89003a3b86b8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/fbc8bf2209d0ab8d579d937b3df89003a3b86b8e",
+                "reference": "fbc8bf2209d0ab8d579d937b3df89003a3b86b8e",
+                "shasum": ""
+            },
+            "require": {
+                "johnpbloch/wordpress-core": "6.9.0",
+                "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
+                "php": ">=7.0.0"
+            },
+            "type": "package",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "https://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+            "homepage": "https://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms",
+                "wordpress"
+            ],
+            "support": {
+                "docs": "https://developer.wordpress.org/",
+                "forum": "https://wordpress.org/support/",
+                "irc": "irc://irc.freenode.net/wordpress",
+                "issues": "https://core.trac.wordpress.org/",
+                "source": "https://core.trac.wordpress.org/browser"
+            },
+            "time": "2025-12-02T19:11:04+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress-core",
+            "version": "6.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core.git",
+                "reference": "4626d4e896c36ab77a69ce58627bc76243b5dd07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/4626d4e896c36ab77a69ce58627bc76243b5dd07",
+                "reference": "4626d4e896c36ab77a69ce58627bc76243b5dd07",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2.24"
+            },
+            "provide": {
+                "wordpress/core-implementation": "6.9.0"
+            },
+            "type": "wordpress-core",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "https://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+            "homepage": "https://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms",
+                "wordpress"
+            ],
+            "support": {
+                "forum": "https://wordpress.org/support/",
+                "irc": "irc://irc.freenode.net/wordpress",
+                "issues": "https://core.trac.wordpress.org/",
+                "source": "https://core.trac.wordpress.org/browser",
+                "wiki": "https://codex.wordpress.org/"
+            },
+            "time": "2025-12-02T19:10:58+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress-core-installer",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
+                "reference": "237faae9a60a4a2e1d45dce1a5836ffa616de63e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/237faae9a60a4a2e1d45dce1a5836ffa616de63e",
+                "reference": "237faae9a60a4a2e1d45dce1a5836ffa616de63e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.6.0"
+            },
+            "conflict": {
+                "composer/installers": "<1.0.6"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0 || ^2.0",
+                "phpunit/phpunit": ">=5.7.27"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "johnpbloch\\Composer\\WordPressCorePlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "johnpbloch\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John P. Bloch",
+                    "email": "me@johnpbloch.com"
+                }
+            ],
+            "description": "A custom installer to handle deploying WordPress with composer",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/johnpbloch/wordpress-core-installer/issues",
+                "source": "https://github.com/johnpbloch/wordpress-core-installer/tree/master"
+            },
+            "time": "2020-04-16T21:44:57+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/autodescription",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autodescription/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.zip?timestamp=1765381627"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autodescription/",
+            "time": "2025-12-10T15:47:07+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/ninja-forms",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ninja-forms/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.zip?timestamp=1765824061"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ninja-forms/",
+            "time": "2025-12-15T18:41:01+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "doubleedesign/doublee-local-dev",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../doublee-local-dev",
+                "reference": "6e3ede7d13b52e5b7fa370be838f429129177234"
+            },
+            "type": "wordpress-plugin",
+            "description": "Local development configuration and utilities for Double-E Design WordPress/ClassicPress projects. Should not be activated on live sites.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "doubleedesign/doublee-local-dev": 20,
+        "wpackagist-plugin/autodescription": 20,
+        "wpackagist-plugin/ninja-forms": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.3"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
