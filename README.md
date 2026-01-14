@@ -1,6 +1,6 @@
-# Vanilla WP playground
+# Double-E Design WordPress Canvas
 
-A blank-ish WordPress setup for developing and testing my base configuration, plugins, and theme framework.
+A blank-ish WordPress setup for developing and testing my base configuration, plugins, and theme framework; and for starting a new WordPress or ClassicPress project.
 
 Specifically:
 - [Comet Components](https://github.com/doubleedesign/comet-components/) (Blocks plugin, Calendar plugin, parent theme for the block editor)
@@ -39,10 +39,10 @@ choco install sass
 6. If using Laravel Herd, add and secure the site either through the UI or in your terminal with:
 	```powershell
 	cd app
-	herd link vanilla-playground
+	herd link wordpress-canvas
 	herd secure
 	```
-7. Access the site admin at [https://vanilla-playground.test/wp-admin](https://vanilla-playground.test/wp-admin) (or whatever URL your local environment uses), activate the theme and plugins, and enter your ACF Pro licence key.
+7. Access the site admin at [https://wordpress-canvas.test/wp-admin](https://wordpress-canvas.test/wp-admin) (or whatever URL your local environment uses), activate the theme and plugins, and enter your ACF Pro licence key.
 
 In the plugin/theme projects you intend to edit:
 1. If the project has a `composer.json` file, run `composer install` 

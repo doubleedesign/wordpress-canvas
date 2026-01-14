@@ -4,6 +4,7 @@ logs
 conf
 app/*
 !app/wp-content/themes
+!app/wp-content/uploads
 !app/wp-config.php
 app/wp-content/debug.log
 app/wp-content/upgrade
@@ -11,5 +12,3 @@ app/wp-content/upgrade
 
 # Paid plugins
 app/wp-content/plugins/advanced-custom-fields-pro
-
-# Symlinked plugins
