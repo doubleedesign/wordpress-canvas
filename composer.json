@@ -10,7 +10,7 @@
 		}
 	],
 	"require": {
-		"php": ">=8.3",
+		"php": ">=8.4",
 		"johnpbloch/wordpress": "^6.9",
 		"johnpbloch/wordpress-core-installer": "^2.0",
 		"composer/installers": "^2.0",
@@ -23,7 +23,8 @@
 		"doubleedesign/doublee-tinymce": "*",
 		"doubleedesign/doublee-ninja-markup": "*",
 		"wpackagist-plugin/ninja-forms": "dev-trunk",
-		"wpackagist-plugin/autodescription": "dev-trunk"
+		"wpackagist-plugin/autodescription": "dev-trunk",
+		"wpackagist-plugin/simply-disable-comments": "dev-trunk"
 	},
 	"require-dev": {
 		"doubleedesign/doublee-local-dev": "dev-master"

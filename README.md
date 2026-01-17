@@ -1,6 +1,6 @@
 # Double-E Design WordPress Canvas
 
-A blank-ish WordPress setup for developing and testing my base configuration, plugins, and theme framework; and for starting a new WordPress or ClassicPress project.
+A [Composer](https://getcomposer.org/)-managed blank-ish WordPress setup for developing and testing my base configuration, plugins, and theme framework; and for starting a new WordPress or ClassicPress project.
 
 Specifically:
 - [Comet Components](https://github.com/doubleedesign/comet-components/) (Blocks plugin, Calendar plugin, parent theme for the block editor)

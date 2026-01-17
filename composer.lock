@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31b6b68109066f6ab3b9f258d2a76998",
+    "content-hash": "4a99b47ff2388d8776712a6f762de41c",
     "packages": [
         {
             "name": "composer/installers",
@@ -187,12 +187,16 @@
             "dist": {
                 "type": "path",
                 "url": "../comet-components/packages/comet-calendar",
-                "reference": "8e7a72006c34de19dea34ee62077b4b911bb0670"
+                "reference": "b5d567000c2ad46d6508e34d21c372ad7a3aa685"
+            },
+            "require": {
+                "php": ">=8.4"
             },
             "type": "wordpress-plugin",
             "autoload": {
                 "psr-4": {
-                    "Doubleedesign\\Comet\\WordPress\\Calendar\\": "src/"
+                    "Doubleedesign\\Comet\\WordPress\\Calendar\\": "src/",
+                    "Doubleedesign\\Comet\\WordPress\\Calendar\\Tests\\": "tests/"
                 }
             },
             "authors": [
@@ -241,10 +245,11 @@
             "dist": {
                 "type": "path",
                 "url": "../comet-components/packages/comet-plugin-blocks",
-                "reference": "907423402abf9afa9f9bffb21cfac3031a3757f8"
+                "reference": "b2c225017cf360b79f977b650355f3ceca170c5e"
             },
             "require": {
-                "doubleedesign/comet-components-core": "0.3.0"
+                "doubleedesign/comet-components-core": "dev-master",
+                "php": ">=8.4"
             },
             "type": "wordpress-plugin",
             "autoload": {
@@ -273,14 +278,19 @@
         },
         {
             "name": "doubleedesign/doublee-base-plugin",
-            "version": "3.0.0",
+            "version": "4.1.0",
             "dist": {
                 "type": "path",
                 "url": "../doublee-base-plugin",
-                "reference": "5419ceb40050de445dd26bac3f8f6fcd58d6aff9"
+                "reference": "aefe8076c105757dfd1b3d7f3979e4eb649d2187"
             },
             "require": {
                 "php": ">=8.3"
+            },
+            "require-dev": {
+                "brain/monkey": "^2.6",
+                "pestphp/pest": "^4.3",
+                "sirbrillig/spies": "^1.10"
             },
             "type": "wordpress-plugin",
             "autoload": {
@@ -588,14 +598,33 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.zip?timestamp=1765824061"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.zip?timestamp=1768483426"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ninja-forms/",
-            "time": "2025-12-15T18:41:01+00:00"
+            "time": "2026-01-15T13:23:46+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/simply-disable-comments",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/simply-disable-comments/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simply-disable-comments.zip?timestamp=1763716172"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simply-disable-comments/",
+            "time": "2025-11-21T09:09:32+00:00"
         }
     ],
     "packages-dev": [
@@ -620,13 +649,14 @@
     "stability-flags": {
         "doubleedesign/doublee-local-dev": 20,
         "wpackagist-plugin/autodescription": 20,
-        "wpackagist-plugin/ninja-forms": 20
+        "wpackagist-plugin/ninja-forms": 20,
+        "wpackagist-plugin/simply-disable-comments": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.3"
+        "php": ">=8.4"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
