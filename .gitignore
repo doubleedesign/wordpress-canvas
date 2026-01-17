@@ -3,12 +3,21 @@ vendor
 logs
 conf
 app/*
-!app/wp-content/themes
-!app/wp-content/uploads
+!app/wp-content
 !app/wp-config.php
 app/wp-content/debug.log
+app/wp-content/themes/comet-canvas-blocks
 app/wp-content/upgrade
+app/wp-content/languages
 .idea/copilot*
 
 # Paid plugins
 app/wp-content/plugins/advanced-custom-fields-pro
+
+# Composer-managed plugins
+app/wp-content/plugins/autodescription
+app/wp-content/plugins/simply-disable-comments
+app/wp-content/plugins/ninja-forms
+app/wp-content/plugins/comet*
+app/wp-content/plugins/doublee*
+app/wp-content/plugins/acf-advanced-image-field
