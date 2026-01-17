@@ -3,7 +3,6 @@
   <component name="LaravelPint">
     <laravel_pint_settings>
       <LaravelPintConfiguration tool_path="$USER_HOME$/AppData/Roaming/Composer/vendor/bin/pint" />
-      <LaravelPintConfiguration asDefaultInterpreter="true" />
     </laravel_pint_settings>
   </component>
   <component name="MessDetectorOptionsConfiguration">
@@ -21,7 +20,52 @@
       <PhpCSConfiguration asDefaultInterpreter="true" />
     </phpcs_settings>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.3">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/johnpbloch/wordpress-core-installer" />
+      <path value="$PROJECT_DIR$/vendor/johnpbloch/wordpress" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/doubleedesign/comet-components-core" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/tomloprod/colority" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/bus" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/macroable" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/collections" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/view" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/events" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/conditionable" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/illuminate/pipeline" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/openpsa/ranger" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/feimosi/baguettebox.js" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/doublee-breadcrumbs/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/wp-content/themes/comet-canvas-blocks/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/doublee-base-plugin/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/acf-advanced-image-field/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/comet-calendar/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/doublee-ninja-markup/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/doublee-tinymce/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.4">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStan">
@@ -31,6 +75,11 @@
   </component>
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
+    </phpunit_settings>
   </component>
   <component name="Psalm">
     <Psalm_settings>

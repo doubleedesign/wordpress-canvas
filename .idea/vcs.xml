@@ -2,5 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/wp-content/plugins/acf-advanced-image-field" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/wp-content/plugins/doublee-base-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/wp-content/plugins/doublee-breadcrumbs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/wp-content/plugins/doublee-local-dev" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/wp-content/plugins/doublee-ninja-markup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/wp-content/plugins/doublee-tinymce" vcs="Git" />
   </component>
 </project>
