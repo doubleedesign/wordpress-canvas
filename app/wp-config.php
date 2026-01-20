@@ -92,9 +92,17 @@ define('SCRIPT_DEBUG', false); // NOTE: Blocks that use VueJS cause React errors
 
 define('WP_ENVIRONMENT_TYPE', 'local');
 
-// Explicitly set site URLs so they can't be changed in the admin
-define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
-define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
+
+if (defined('WP_CLI') && WP_CLI) {
+	// Use the folder name to construct the URL for CLI
+	$folderName = basename(dirname(__FILE__));
+	define('WP_HOME', "https://{$folderName}.test");
+	define('WP_SITEURL', "https://{$folderName}.test");
+} else {
+	// Explicitly set site URLs so they can't be changed in the admin
+	define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
+	define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
+}
 
 /* Add any custom values between this line and the "stop editing" line. */
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a99b47ff2388d8776712a6f762de41c",
+    "content-hash": "d4ff22aff24c2052fdcec1e161dc17ea",
     "packages": [
         {
             "name": "composer/installers",
@@ -278,11 +278,11 @@
         },
         {
             "name": "doubleedesign/doublee-base-plugin",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "dist": {
                 "type": "path",
                 "url": "../doublee-base-plugin",
-                "reference": "aefe8076c105757dfd1b3d7f3979e4eb649d2187"
+                "reference": "bb76ede1d8ee5b6ebf0f1006215c9957797876d9"
             },
             "require": {
                 "php": ">=8.3"
@@ -321,7 +321,7 @@
             "dist": {
                 "type": "path",
                 "url": "../doublee-breadcrumbs",
-                "reference": "a844ca99e9de8740f7fcb16903c5c96ea8a5ef34"
+                "reference": "1ee14faee6690c2ac97e41db995869ddbc6bfd18"
             },
             "require-dev": {
                 "brain/monkey": "^2.6",
