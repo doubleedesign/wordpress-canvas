@@ -39,12 +39,13 @@ choco install sass
 ## Automated setup
 
 1. Clone this repository into the same directory as the above-listed projects
-2. Ensure ACF Pro is stored in your `PhpStormProjects` directory (or update the setup script)
-3. Update the setup script if your MySQL server is not on port 3309 (the default is 3306)
-4. Update the setup script if you want to use different database and/or WordPress credentials
+2. Ensure you have [WP CLI](https://wp-cli.org/) installed and available in your system PATH
+3. Ensure ACF Pro is stored in your `PhpStormProjects` directory (or update the setup script)
+4. Update the setup script if your MySQL server is not on port 3309 (the default is 3306)
+5. Update the setup script if you want to use different database and/or WordPress credentials
 
 > [!IMPORTANT]  
-> If you are using this repo as a project template, follow the [instructions](##using-this-repo-as-a-project-template) below about that before running the setup script.
+> If you are using this repo as a project template, follow the [instructions](#using-this-repo-as-a-project-template) below about that before running the setup script.
 
 5. Run the PowerShell script from the project root:
 
@@ -72,21 +73,34 @@ All going well, the only thing you will need to do manually is enter your ACF Pr
 
 ## Manual setup
 1. Clone this repository into the same directory as the above-listed projects 
-2. Create a database matching the config provided in `wp-config.php` (or update the config)
-3. Import the latest copy of the database dump located in this project's `sql` folder
-4. Install WordPress core and symlink the local plugin and theme projects
-	```powershell
-	composer install
-	```
-5. Copy ACF Pro into the `app/wp-content/plugins` directory (not included in this repo for licensing reasons)
-6. If using Laravel Herd, add and secure the site either through the UI or in your terminal with:
-	```powershell
-	cd app
-	herd link wordpress-canvas
-	herd secure
-	```
-7. Access the site admin at [https://wordpress-canvas.test/wp-admin](https://wordpress-canvas.test/wp-admin) (or whatever URL your local environment uses), activate the theme and plugins, and enter your ACF Pro licence key
-8. Delete unwanted default themes and plugins.
+2. if using local copies of the above-listed plugins, ensure they are up-to-date with local Composer configuration and dependencies in each project directory. (Remove `--no-dev` if you also intend to do things like unit testing in those projects.)
+	
+    ```powershell
+     $env:COMPOSER = "composer.local.json"; composer update --prefer-source --no-dev
+    composer dump-autoload -o
+    ```
+	
+    If a project does not have a `composer.local.json` file, close the terminal window and open a new one (to clear the temporary environment variable) before running the basic commands:
+	
+    ```powershell
+    composer update --prefer-source --no-dev
+    composer dump-autoload -o
+    ```
+3. Create a database matching the config provided in `wp-config.php` (or update the config)
+4. Import the latest copy of the database dump located in this project's `sql` folder
+5. Install WordPress core and symlink the local plugin and theme projects
+    ```powershell
+    composer install
+    ```
+6. Copy ACF Pro into the `app/wp-content/plugins` directory (not included in this repo for licensing reasons)
+7. If using Laravel Herd, add and secure the site either through the UI or in your terminal with:
+    ```powershell
+    cd app
+    herd link wordpress-canvas
+    herd secure
+    ```
+8. Access the site admin at [https://wordpress-canvas.test/wp-admin](https://wordpress-canvas.test/wp-admin) (or whatever URL your local environment uses), activate the theme and plugins, and enter your ACF Pro licence key
+9. Delete unwanted default themes and plugins.
 
 In the plugin/theme projects you intend to edit:
 1. If the project has a `composer.json` file, run `composer install` 
@@ -110,7 +124,25 @@ In the plugin/theme projects you intend to edit:
 > [!WARNING]  
 > Do not deploy the `doublee-local-dev` plugin to staging or production sites. It is intended only for local development and may break things and/or pose security risks on live sites.
 
+---
 ## Additional Resources
 - [Comet Components docs](https://cometcomponents.io)
 - [My WordPress plugin template](https://github.com/doubleedesign/wp-plugin-template)
 - [WP Packagist](https://wpackagist.org/) - use to install WP.org-listed plugins via Composer
+
+---
+## Troubleshooting
+
+```
+The Herd Desktop application is not running. Please start Herd and try again.
+```
+If you get this error and Herd is definitely running, something else may be using the port that Herd uses to communicate with the CLI (usually 9001). You can confirm in Herd under General → Internal API Port.
+
+To find what is using the port, open a PowerShell instance with admin privileges and run:
+
+```powershell
+netstat -aon | findstr :9001
+```
+If it's something you can't stop, you can change the port Herd uses in the settings and stop and restart all services in Herd to work around it.
+
+If nothing comes up, you can also try changing the port in Herd and restarting all services; if that doesn't work try exiting Herd completely and restarting it.
