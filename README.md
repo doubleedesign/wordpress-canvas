@@ -98,12 +98,14 @@ In the plugin/theme projects you intend to edit:
 ---
 ## Using this repo as a project template
 
-1. Remove the `.git` folder, rename the project directory, and run `git init` to initialise it as a new repository.
-2. Update the `composer.json` file to reflect your new project details and run `composer update` to regenerate the `composer.lock` file.
-3. Update the folder name and metadata (in `style.scss`) for the child theme to suit your new project.
-4. Ensure Laravel Pint and Sass are set up to run on save for the child theme.
-5. If your project will contain custom post types, taxonomies, and other data-related functionality, create a project-specific plugin.
-6. Ensure your custom theme, any custom plugins, and any plugins not managed by Composer are not excluded from version control by updating the `.gitignore` file as necessary.
+1. Remove the `.git` folder, rename the project directory, and run `git init` to initialise it as a new repository
+2. Update the `composer.json` file to reflect your new project details and run `composer update` to regenerate the `composer.lock` file
+3. Update the folder name and metadata (in `style.scss`) for the child theme to suit your new project
+4. Delete the demo/test content in `wp-content/uploads` folder
+5. Ensure Laravel Pint and Sass are set up to run on save for the child theme
+6. If your project will contain custom post types, taxonomies, and other data-related functionality, create a project-specific plugin
+7. Ensure your custom theme, any custom plugins, and any plugins not managed by Composer are not excluded from version control by updating the `.gitignore` file as necessary
+8. Delete the test/demo database dumps from the `sql` folder.
 
 > [!WARNING]  
 > Do not deploy the `doublee-local-dev` plugin to staging or production sites. It is intended only for local development and may break things and/or pose security risks on live sites.
