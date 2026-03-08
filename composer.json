@@ -14,14 +14,14 @@
 		"johnpbloch/wordpress": "^6.9",
 		"johnpbloch/wordpress-core-installer": "^2.0",
 		"composer/installers": "^2.0",
-		"doubleedesign/comet-canvas-blocks": "*",
-		"doubleedesign/comet-plugin-blocks": "*",
-		"doubleedesign/comet-calendar": "*",
-		"doubleedesign/doublee-breadcrumbs": "*",
-		"doubleedesign/doublee-base-plugin": "*",
-		"doubleedesign/acf-advanced-image-field": "*",
-		"doubleedesign/doublee-tinymce": "*",
-		"doubleedesign/doublee-ninja-markup": "*",
+		"doubleedesign/comet-canvas-blocks": "dev-master",
+		"doubleedesign/comet-plugin-blocks": "dev-master",
+		"doubleedesign/comet-calendar": "dev-master",
+		"doubleedesign/doublee-breadcrumbs": "dev-main",
+		"doubleedesign/doublee-base-plugin": "dev-master",
+		"doubleedesign/acf-advanced-image-field": "dev-master",
+		"doubleedesign/doublee-tinymce": "dev-master",
+		"doubleedesign/doublee-ninja-markup": "dev-master",
 		"wpackagist-plugin/ninja-forms": "dev-trunk",
 		"wpackagist-plugin/autodescription": "dev-trunk",
 		"wpackagist-plugin/simply-disable-comments": "dev-trunk"
@@ -43,71 +43,12 @@
 			]
 		},
 		{
-			"type": "path",
-			"url": "../comet-components/packages/comet-plugin-blocks",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type": "path",
-			"url": "../comet-components/packages/comet-canvas-blocks",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type": "path",
-			"url": "../comet-components/packages/comet-calendar",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type": "path",
-			"url": "../doublee-breadcrumbs",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type": "path",
-			"url": "../doublee-base-plugin",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type": "path",
-			"url": "../acf-advanced-image-field",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type": "path",
-			"url": "../doublee-tinymce",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type": "path",
-			"url": "../doublee-ninja-markup",
-			"options": {
-				"symlink": true
-			}
-		},
-		{
-			"type": "path",
-			"url": "../doublee-local-dev",
-			"options": {
-				"symlink": true
-			}
+			"type": "vcs",
+			"url": "https://github.com/doubleedesign/baguetteBox.js"
 		},
 		{
 			"type": "vcs",
-			"url": "https://github.com/doubleedesign/baguetteBox.js"
+			"url": "https://github.com/doubleedesign/doublee-local-dev"
 		}
 	],
 	"extra": {
