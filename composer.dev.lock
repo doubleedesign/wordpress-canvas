@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a15e08dc1a872e21e9d20ce260584a5",
+    "content-hash": "0a9de6ac2e7861a5d10709787f6f5e0a",
     "packages": [
         {
             "name": "composer/installers",
@@ -154,19 +154,12 @@
         },
         {
             "name": "doubleedesign/acf-advanced-image-field",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doubleedesign/acf-advanced-image-field.git",
+            "version": "0.0.3",
+            "dist": {
+                "type": "path",
+                "url": "../acf-advanced-image-field",
                 "reference": "d12b44818d8467fc40193bbfae8de57f07cf566b"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doubleedesign/acf-advanced-image-field/zipball/d12b44818d8467fc40193bbfae8de57f07cf566b",
-                "reference": "d12b44818d8467fc40193bbfae8de57f07cf566b",
-                "shasum": ""
-            },
-            "default-branch": true,
             "type": "wordpress-plugin",
             "autoload": {
                 "psr-4": {
@@ -176,7 +169,6 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Leesa Ward",
@@ -184,30 +176,22 @@
                 }
             ],
             "description": "Enhanced image field for Advanced Custom Fields with aspect ratio and focal point settings + real-time in-editor preview.",
-            "support": {
-                "issues": "https://github.com/doubleedesign/acf-advanced-image-field/issues",
-                "source": "https://github.com/doubleedesign/acf-advanced-image-field/tree/0.0.4"
-            },
-            "time": "2026-01-02T08:11:04+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "doubleedesign/comet-calendar",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doubleedesign/comet-calendar.git",
-                "reference": "307cc614168a8525eb39e3bc4c5fa64577a8630e"
-            },
+            "version": "0.0.4",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doubleedesign/comet-calendar/zipball/307cc614168a8525eb39e3bc4c5fa64577a8630e",
-                "reference": "307cc614168a8525eb39e3bc4c5fa64577a8630e",
-                "shasum": ""
+                "type": "path",
+                "url": "../comet-components/packages/comet-calendar",
+                "reference": "b5d567000c2ad46d6508e34d21c372ad7a3aa685"
             },
             "require": {
                 "php": ">=8.4"
             },
-            "default-branch": true,
             "type": "wordpress-plugin",
             "autoload": {
                 "psr-4": {
@@ -215,7 +199,6 @@
                     "Doubleedesign\\Comet\\WordPress\\Calendar\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Leesa Ward",
@@ -224,33 +207,25 @@
             ],
             "description": "WordPress plugin for centrally managing events and displaying them using Comet Components.",
             "homepage": "https://cometcomponents.io",
-            "support": {
-                "source": "https://github.com/doubleedesign/comet-calendar/tree/master"
-            },
-            "time": "2026-02-02T01:33:12+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "doubleedesign/comet-canvas-blocks",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doubleedesign/comet-canvas-blocks.git",
-                "reference": "fe2c3358f122fea2dc9aa515981d00956d96ceb0"
-            },
+            "version": "0.7.0",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doubleedesign/comet-canvas-blocks/zipball/fe2c3358f122fea2dc9aa515981d00956d96ceb0",
-                "reference": "fe2c3358f122fea2dc9aa515981d00956d96ceb0",
-                "shasum": ""
+                "type": "path",
+                "url": "../comet-components/packages/comet-canvas-blocks",
+                "reference": "83c113020a2acfa126c07252c558ea844f0f0f55"
             },
-            "default-branch": true,
             "type": "wordpress-theme",
             "autoload": {
                 "psr-4": {
                     "Doubleedesign\\CometCanvas\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Leesa Ward",
@@ -259,38 +234,35 @@
             ],
             "description": "WordPress parent theme to support the intended implementation of Comet Components in WordPress with the block editor.",
             "homepage": "https://cometcomponents.io",
-            "support": {
-                "issues": "https://github.com/doubleedesign/comet-canvas-blocks/issues",
-                "source": "https://github.com/doubleedesign/comet-canvas-blocks/tree/master"
-            },
-            "time": "2026-02-02T01:33:12+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "doubleedesign/comet-plugin-blocks",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doubleedesign/comet-plugin-blocks.git",
-                "reference": "cd58daeaeebee9531e747d1276f6a94410fbf156"
-            },
+            "version": "0.6.0",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doubleedesign/comet-plugin-blocks/zipball/cd58daeaeebee9531e747d1276f6a94410fbf156",
-                "reference": "cd58daeaeebee9531e747d1276f6a94410fbf156",
-                "shasum": ""
+                "type": "path",
+                "url": "../comet-components/packages/comet-plugin-blocks",
+                "reference": "9e66156ecf3aea5d7f08082194a1811850fc6f1a"
             },
             "require": {
                 "doubleedesign/comet-components-core": "dev-master",
                 "php": ">=8.4"
             },
-            "default-branch": true,
             "type": "wordpress-plugin",
             "autoload": {
                 "psr-4": {
                     "Doubleedesign\\Comet\\WordPress\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "archive": {
+                "exclude": [
+                    "src/*.scss",
+                    "src/*.css.map"
+                ]
+            },
             "authors": [
                 {
                     "name": "Leesa Ward",
@@ -299,25 +271,18 @@
             ],
             "description": "WordPress plugin implementing the Comet Components library and associated block editor customisations.",
             "homepage": "https://cometcomponents.io",
-            "support": {
-                "issues": "https://github.com/doubleedesign/comet-plugin-blocks/issues",
-                "source": "https://github.com/doubleedesign/comet-plugin-blocks/tree/master"
-            },
-            "time": "2026-02-08T11:15:48+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "doubleedesign/doublee-base-plugin",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doubleedesign/doublee-base-plugin.git",
-                "reference": "ca7dbe7db2c3012f4a4fc227e7f18de37a5c6f97"
-            },
+            "version": "4.1.1",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doubleedesign/doublee-base-plugin/zipball/ca7dbe7db2c3012f4a4fc227e7f18de37a5c6f97",
-                "reference": "ca7dbe7db2c3012f4a4fc227e7f18de37a5c6f97",
-                "shasum": ""
+                "type": "path",
+                "url": "../doublee-base-plugin",
+                "reference": "ca7dbe7db2c3012f4a4fc227e7f18de37a5c6f97"
             },
             "require": {
                 "php": ">=8.3"
@@ -327,7 +292,6 @@
                 "pestphp/pest": "^4.3",
                 "sirbrillig/spies": "^1.10"
             },
-            "default-branch": true,
             "type": "wordpress-plugin",
             "autoload": {
                 "psr-4": {
@@ -339,7 +303,6 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Leesa Ward",
@@ -347,38 +310,29 @@
                 }
             ],
             "homepage": "https://github.com/doubleedesign/doublee-base-plugin",
-            "support": {
-                "issues": "https://github.com/doubleedesign/doublee-base-plugin/issues",
-                "source": "https://github.com/doubleedesign/doublee-base-plugin/tree/master"
-            },
-            "time": "2026-02-01T23:34:16+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "doubleedesign/doublee-breadcrumbs",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doubleedesign/doublee-breadcrumbs.git",
-                "reference": "c78d8583e9df26fb647c2948fa7fee2a56374d74"
-            },
+            "version": "2.0.0",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doubleedesign/doublee-breadcrumbs/zipball/c78d8583e9df26fb647c2948fa7fee2a56374d74",
-                "reference": "c78d8583e9df26fb647c2948fa7fee2a56374d74",
-                "shasum": ""
+                "type": "path",
+                "url": "../doublee-breadcrumbs",
+                "reference": "c78d8583e9df26fb647c2948fa7fee2a56374d74"
             },
             "require-dev": {
                 "brain/monkey": "^2.6",
                 "pestphp/pest": "^3.8.2"
             },
-            "default-branch": true,
             "type": "wordpress-plugin",
             "autoload": {
                 "psr-4": {
                     "Doubleedesign\\Breadcrumbs\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Leesa Ward",
@@ -386,40 +340,25 @@
                 }
             ],
             "homepage": "https://github.com/doubleedesign/doublee-breadcrumbs",
-            "support": {
-                "issues": "https://github.com/doubleedesign/doublee-breadcrumbs/issues",
-                "source": "https://github.com/doubleedesign/doublee-breadcrumbs/tree/main"
-            },
-            "funding": [
-                {
-                    "url": "https://paypal.me/doubleedesign",
-                    "type": "custom"
-                }
-            ],
-            "time": "2025-12-20T00:03:06+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "doubleedesign/doublee-ninja-markup",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doubleedesign/doublee-ninja-markup.git",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../doublee-ninja-markup",
                 "reference": "276c1d067f520b9b938ef7c57635077450379b55"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doubleedesign/doublee-ninja-markup/zipball/276c1d067f520b9b938ef7c57635077450379b55",
-                "reference": "276c1d067f520b9b938ef7c57635077450379b55",
-                "shasum": ""
-            },
-            "default-branch": true,
             "type": "wordpress-plugin",
             "autoload": {
                 "psr-4": {
                     "doubleedesign\\DoubleeNinjaMarkup\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Leesa Ward",
@@ -427,33 +366,29 @@
                 }
             ],
             "description": "Overrides Ninja Forms' front-end HTML markup with BEM-style class names, and provides some base CSS to match.",
-            "support": {
-                "issues": "https://github.com/doubleedesign/doublee-ninja-markup/issues",
-                "source": "https://github.com/doubleedesign/doublee-ninja-markup/tree/master"
-            },
-            "time": "2025-12-31T09:03:18+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "doubleedesign/doublee-tinymce",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doubleedesign/doublee-tinymce.git",
-                "reference": "0bdb097ea12d7d918df36c0e13c1e43123db5e5d"
-            },
+            "version": "1.0.1",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doubleedesign/doublee-tinymce/zipball/0bdb097ea12d7d918df36c0e13c1e43123db5e5d",
-                "reference": "0bdb097ea12d7d918df36c0e13c1e43123db5e5d",
-                "shasum": ""
+                "type": "path",
+                "url": "../doublee-tinymce",
+                "reference": "0bdb097ea12d7d918df36c0e13c1e43123db5e5d"
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*"
             },
-            "default-branch": true,
             "type": "wordpress-plugin",
             "autoload": {
+                "classmap": [
+                    "src/Miniblocks",
+                    "src/Miniblocks/**"
+                ],
                 "psr-4": {
                     "Doubleedesign\\DoubleeTinymce\\": [
                         "src/",
@@ -463,13 +398,8 @@
                         "src/Miniblocks/Pullquote",
                         "src/Tables"
                     ]
-                },
-                "classmap": [
-                    "src/Miniblocks",
-                    "src/Miniblocks/**"
-                ]
+                }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Leesa Ward",
@@ -477,11 +407,10 @@
                 }
             ],
             "description": "Customised configuration and plugins for WordPress/ClassicPress websites by Double-E Design.",
-            "support": {
-                "issues": "https://github.com/doubleedesign/doublee-tinymce/issues",
-                "source": "https://github.com/doubleedesign/doublee-tinymce/tree/master"
-            },
-            "time": "2026-03-09T00:36:56+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "roots/wordpress",
@@ -722,18 +651,27 @@
             "time": "2025-11-21T09:09:32+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "doubleedesign/doublee-local-dev",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../doublee-local-dev",
+                "reference": "6e3ede7d13b52e5b7fa370be838f429129177234"
+            },
+            "type": "wordpress-plugin",
+            "description": "Local development configuration and utilities for Double-E Design WordPress/ClassicPress projects. Should not be activated on live sites.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "doubleedesign/acf-advanced-image-field": 20,
-        "doubleedesign/comet-calendar": 20,
-        "doubleedesign/comet-canvas-blocks": 20,
-        "doubleedesign/comet-plugin-blocks": 20,
-        "doubleedesign/doublee-base-plugin": 20,
-        "doubleedesign/doublee-breadcrumbs": 20,
-        "doubleedesign/doublee-ninja-markup": 20,
-        "doubleedesign/doublee-tinymce": 20,
+        "doubleedesign/doublee-local-dev": 20,
         "wpackagist-plugin/autodescription": 20,
         "wpackagist-plugin/ninja-forms": 20,
         "wpackagist-plugin/simply-disable-comments": 20

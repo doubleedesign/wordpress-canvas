@@ -64,8 +64,7 @@
       <path value="$PROJECT_DIR$/app/wp-content/plugins/doublee-ninja-markup/vendor/composer" />
       <path value="$PROJECT_DIR$/app/wp-content/plugins/doublee-tinymce/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/johnpbloch/wordpress-core-installer" />
-      <path value="$PROJECT_DIR$/vendor/johnpbloch/wordpress" />
+      <path value="$PROJECT_DIR$/vendor/roots/wordpress-core-installer" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.4">

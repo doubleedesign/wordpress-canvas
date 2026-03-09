@@ -1,7 +1,7 @@
 {
 	"name": "doubleedesign/wordpress-canvas",
 	"type": "project",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"homepage": "https://github.com/doubleedesign/wordpress-canvas",
 	"authors": [
 		{
@@ -11,8 +11,7 @@
 	],
 	"require": {
 		"php": ">=8.4",
-		"johnpbloch/wordpress": "^6.9",
-		"johnpbloch/wordpress-core-installer": "^2.0",
+		"roots/wordpress": "^6.9",
 		"composer/installers": "^2.0",
 		"doubleedesign/comet-canvas-blocks": "dev-master",
 		"doubleedesign/comet-plugin-blocks": "dev-master",
@@ -25,9 +24,6 @@
 		"wpackagist-plugin/ninja-forms": "dev-trunk",
 		"wpackagist-plugin/autodescription": "dev-trunk",
 		"wpackagist-plugin/simply-disable-comments": "dev-trunk"
-	},
-	"require-dev": {
-		"doubleedesign/doublee-local-dev": "dev-master"
 	},
 	"replace": {
 		"doubleedesign/comet-components-core": "*"
@@ -52,7 +48,6 @@
 		}
 	],
 	"extra": {
-		"wordpress-install-dir": "app",
 		"installer-paths": {
 			"app/wp-content/plugins/{$name}/": [
 				"type:wordpress-plugin"
@@ -64,9 +59,17 @@
 	},
 	"config": {
 		"allow-plugins": {
-			"johnpbloch/wordpress-core-installer": true,
-			"composer/installers": true
+			"composer/installers": true,
+			"roots/wordpress-core-installer": true
 		},
 		"optimize-autoloader": true
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"pwsh.exe .\\postinstall.ps1 -NoProfile"
+		],
+		"post-install-cmd": [
+			"pwsh.exe .\\postinstall.ps1 -NoProfile"
+		]
 	}
 }

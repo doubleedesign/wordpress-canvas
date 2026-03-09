@@ -1,7 +1,7 @@
 {
 	"name": "doubleedesign/wordpress-canvas",
 	"type": "project",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"homepage": "https://github.com/doubleedesign/wordpress-canvas",
 	"authors": [
 		{
@@ -11,8 +11,7 @@
 	],
 	"require": {
 		"php": ">=8.4",
-		"johnpbloch/wordpress": "^6.9",
-		"johnpbloch/wordpress-core-installer": "^2.0",
+		"roots/wordpress": "^6.9",
 		"composer/installers": "^2.0",
 		"doubleedesign/comet-canvas-blocks": "*",
 		"doubleedesign/comet-plugin-blocks": "*",
@@ -123,9 +122,17 @@
 	},
 	"config": {
 		"allow-plugins": {
-			"johnpbloch/wordpress-core-installer": true,
-			"composer/installers": true
+			"composer/installers": true,
+			"roots/wordpress-core-installer": true
 		},
 		"optimize-autoloader": true
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"pwsh.exe .\\postinstall.ps1"
+		],
+		"post-install-cmd": [
+			"pwsh.exe .\\postinstall.ps1"
+		]
 	}
 }

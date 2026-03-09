@@ -35,14 +35,22 @@ This will temporarily set the `COMPOSER` environment variable to point to the `c
 - [Laravel Pint](https://laravel.com/docs/12.x/pint) installed globally and configured to run on save in your IDE in the individual projects
 - [Sass](https://sass-lang.com/install) installed globally and configured to run on save in your IDE for the individual projects that use it
 - [Advanced Custom Fields Pro](https://www.advancedcustomfields.com/pro/) licence
+- PowerShell 7 (`pwsh.exe`) installed (alternatively, update composer.json to use `powershell.exe` instead of `pwsh.exe` to use Windows PowerShell)
+- The ability to execute PowerShell scripts.
 
 To install Pint globally: 
-```php
+```powershell
 composer global require laravel/pint
 ```
+
 To install Sass globally with [Chocolatey](https://chocolatey.org/):
 ```powershell
 choco install sass
+```
+
+To enable running PowerShell scripts, you may need to change the execution policy. You can do this for yourself by opening PowerShell as an administrator and running:
+```powershell
+Set-ExecutionPolicy -Bypass -Scope CurrentUser
 ```
 
 ## Automated setup
@@ -108,16 +116,13 @@ In the plugin/theme projects you intend to edit:
 6. If your project will contain custom post types, taxonomies, and other data-related functionality, create a project-specific plugin
 7. Ensure your custom theme, any custom plugins, and any plugins not managed by Composer are not excluded from version control by updating the `.gitignore` file as necessary
 8. Delete the test/demo database dumps from the `sql` folder.
-9. Update the `README.md` file to reflect your new project details and setup instructions. 
+9. Replace this `README.md` file with the contents of `README-project.md` and update it to reflect your new project details and setup instructions. 
 
 > [!WARNING]  
 > Do not deploy the `doublee-local-dev` plugin to staging or production sites. It is intended only for local development and may break things and/or pose security risks on live sites.
 
-> [!WARNING]
-> Running `composer install` on an existing site may cause you to lose files that are not managed by Composer (such as your uploads or a custom theme) because of the way WordPress gets installed. Ensure these files are backed up before running any Composer commands so you can easily put them back if this happens.
-
 > [!TIP]
-> When you're done with the initial site development, you might want to update `composer.json` to reference the current versions of the plugins and themes you're using, so that if you go to work on this project after a while and run `composer update` it doesn't update to the latest versions and introduce breaking changes when you're not prepared to deal with them. Update `composer.json` intentionally when you want to test updates locally before pushing them to production.
+> When you're done with the initial site development, you might want to update `composer.json` to reference the current versions of the plugins and themes you're using instead of the dev versions, to help with intentional update testing and rollout.
 
 ---
 ## Additional Resources
@@ -128,16 +133,4 @@ In the plugin/theme projects you intend to edit:
 ---
 ## Troubleshooting
 
-```
-The Herd Desktop application is not running. Please start Herd and try again.
-```
-If you get this error and Herd is definitely running, something else may be using the port that Herd uses to communicate with the CLI (usually 9001). You can confirm in Herd under General → Internal API Port.
-
-To find what is using the port, open a PowerShell instance with admin privileges and run:
-
-```powershell
-netstat -aon | findstr :9001
-```
-If it's something you can't stop, you can change the port Herd uses in the settings and stop and restart all services in Herd to work around it.
-
-If nothing comes up, you can also try changing the port in Herd and restarting all services; if that doesn't work try exiting Herd completely and restarting it.
+See [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) for solutions to common issues.
