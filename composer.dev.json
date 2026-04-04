@@ -129,10 +129,10 @@
 	},
 	"scripts": {
 		"post-update-cmd": [
-			"pwsh.exe .\\postinstall.ps1"
+			"pwsh.exe -NoProfile .\\postinstall.ps1"
 		],
 		"post-install-cmd": [
-			"pwsh.exe .\\postinstall.ps1"
+			"pwsh.exe -NoProfile .\\postinstall.ps1"
 		]
 	}
 }
