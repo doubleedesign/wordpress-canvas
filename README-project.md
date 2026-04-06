@@ -87,8 +87,19 @@ $env:COMPOSER = "composer.dev.json"; composer update
 ```
 This will temporarily set the `COMPOSER` environment variable to point to the `composer.dev.json` file, which will persist for the duration of your PowerShell session.
 
+You can also update the dependencies of your local copies of the Double-E Design packages from their source directories as needed using the `postinstall.ps1` script, setting dev mode first:
+
+```powershell
+$env:POWERPRESS_DEV = 1; ./postinstall.ps1
+```
+
+> [!NOTE]
+> To ensure the Comet Components core package is symlinked within the Comet Components Blocks plugin, you may need to run Composer install/update from its source directory (in the Comet Components monorepo on your machine, not from within this project), using their `composer.local.json` configuration files.
+> Similarly, to ensure the Core package has its dependencies, you may need to run Composer install/update from its source directory.
+
 > [!WARNING]  
 > Do not deploy the `doublee-local-dev` plugin to staging or production sites. It is intended only for local development and may break things and/or pose security risks on live sites.
+
 
 --- 
 ## Packup
