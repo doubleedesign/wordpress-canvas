@@ -110,7 +110,6 @@
 		}
 	],
 	"extra": {
-		"wordpress-install-dir": "app",
 		"installer-paths": {
 			"app/wp-content/plugins/{$name}/": [
 				"type:wordpress-plugin"
