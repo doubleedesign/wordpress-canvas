@@ -23,7 +23,8 @@
 		"doubleedesign/doublee-ninja-markup": "*",
 		"wpackagist-plugin/ninja-forms": "dev-trunk",
 		"wpackagist-plugin/autodescription": "dev-trunk",
-		"wpackagist-plugin/simply-disable-comments": "dev-trunk"
+		"wpackagist-plugin/simply-disable-comments": "dev-trunk",
+		"wpackagist-plugin/google-site-kit": "dev-trunk"
 	},
 	"require-dev": {
 		"doubleedesign/doublee-local-dev": "dev-master"
