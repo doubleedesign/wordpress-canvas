@@ -10,6 +10,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/app/wp-content/plugins/comet-plugin-blocks/composer.json" />
+      <option value="$PROJECT_DIR$/app/wp-includes/sodium_compat/composer.json" />
+      <option value="$PROJECT_DIR$/app/wp-content/plugins/doublee-base-plugin/composer.json" />
+      <option value="$PROJECT_DIR$/app/wp-content/themes/comet-canvas-blocks/composer.json" />
+      <option value="$PROJECT_DIR$/app/wp-content/plugins/doublee-tinymce/composer.json" />
+      <option value="$PROJECT_DIR$/app/wp-content/plugins/acf-advanced-image-field/composer.json" />
+      <option value="$PROJECT_DIR$/app/wp-content/plugins/comet-calendar/composer.json" />
+      <option value="$PROJECT_DIR$/app/wp-content/plugins/doublee-breadcrumbs/composer.json" />
+      <option value="$PROJECT_DIR$/app/wp-content/plugins/advanced-custom-fields-pro/composer.json" />
+      <option value="$PROJECT_DIR$/app/wp-content/plugins/doublee-ninja-markup/composer.json" />
+    </option>
+  </component>
   <component name="ComposerSettings" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
@@ -67,6 +81,7 @@
       <path value="$PROJECT_DIR$/app/wp-content/plugins/doublee-tinymce/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/roots/wordpress-core-installer" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/advanced-custom-fields-pro/vendor/composer" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -78,27 +93,28 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/leesa/PhpStormProjects/wordpress-canvas",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/leesa/PhpStormProjects/wordpress-canvas&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\leesa\PhpStormProjects\wordpress-canvas" />
@@ -107,8 +123,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PS-253.31033.138" />
-        <option value="bundled-php-predefined-a98d8de5180a-0e0d91225499-com.jetbrains.php.sharedIndexes-PS-253.31033.138" />
+        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-PS-261.22158.283" />
+        <option value="bundled-php-predefined-a98d8de5180a-a9a4ea3ee0f4-com.jetbrains.php.sharedIndexes-PS-261.22158.283" />
       </set>
     </attachedChunks>
   </component>
@@ -123,6 +139,12 @@
       <workItem from="1773015421893" duration="736000" />
       <workItem from="1773016547079" duration="7986000" />
       <workItem from="1773033497856" duration="290000" />
+      <workItem from="1775441116711" duration="661000" />
+      <workItem from="1775451191396" duration="628000" />
+      <workItem from="1775518388344" duration="713000" />
+      <workItem from="1775519406569" duration="263000" />
+      <workItem from="1775522275130" duration="30000" />
+      <workItem from="1775522309417" duration="75000" />
     </task>
     <servers />
   </component>

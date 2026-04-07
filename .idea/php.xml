@@ -70,6 +70,7 @@
       <path value="$PROJECT_DIR$/app/wp-content/plugins/doublee-tinymce/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/roots/wordpress-core-installer" />
+      <path value="$PROJECT_DIR$/app/wp-content/plugins/advanced-custom-fields-pro/vendor/composer" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.4">
