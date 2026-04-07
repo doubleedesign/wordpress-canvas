@@ -7,8 +7,8 @@ The below instructions are written for Windows users with PowerShell as the CLI.
 - [Setup](#setup)
 	- [Prerequisites](#prerequisites)
 	- [Install/update dependencies](#installupdate-dependencies)
-	- [Local database](#local-database)
 	- [Optional: Double-E Design dev mode](#optional-double-e-design-dev-mode)
+	- [Local database](#local-database)
 - [Packup](#packup)
 - [Additional Resources](#additional-resources)
 - [Troubleshooting](#troubleshooting)
@@ -32,44 +32,25 @@ choco install sass
 
 ### Install/update dependencies
 
-To install or update dependencies, run the following commands in the project root and in each of the project's theme and custom plugin(s):
+Dependency installation/updates (both Composer and NPM) are largely handled via automated scripts. These also automatically handle using Double-E Design dev mode (described below).
+
+When starting work on a new local copy of this project, or if you haven't worked on it for a while, start with the setup script. There is no need to set the dev environment variable - this one will prompt you. This handles installing WordPress and all dependencies in the project root's `composer.json` (or `composer.dev.json` if you select dev mode).
 
 ```powershell
-composer install
-```
-```powershell
-composer update
+./setup.ps1
 ```
 
-In the theme and custom plugin(s) you will also need to install JavaScript dependencies if a `package.json` file is present:
+To only refresh dependencies in themes and selected plugins, use the post-install script. If you want to use dev mode, set the `POWERPRESS_DEV` environment variable first.
 
 ```powershell
-npm install
+$env:POWERPRESS_DEV = 1; ./postinstall.ps1
 ```
 
-### Local database
+> [!NOTE]
+> The setup script _also_ runs the postinstall script inside it. You do not generally need to run both individually.
 
-For a fresh local setup:
-
-1. Update the database credentials in the `wp-config.php` file to match your local MySQL/MariaDB instance.
-2. Create a database for the site in your local MySQL/MariaDB instance. In [Laravel Herd Pro](https://herd.laravel.com/), you can ensure the database service is set up and running in the **Services** tab.
-
-3. If using WP-CLI:
-
-   i. Import the database from the command line with:
-   ```powershell
-   wp db import path/to/backup.sql
-   ```
-
-   ii. Do a find-and-replace with WP-CLI to update the site URL to match your local development URL:
-      ```powershell
-	  wp search-replace 'http://oldsiteurl.com' 'https://myproject.test' --skip-columns=guid
-	  ```
-
-4. If not using WP-CLI:
-
-   i. Do a find-and-replace in the SQL backup file to update the site URL to match your local development URL.
-   ii. Access the web interface (via the Services screen in Herd Pro) to import the SQL file into your local database.
+> [!IMPORTANT]
+> If you have client-specific plugins, you may need to update their dependencies separately if the script(s) have not been updated to account for them.
 
 ### Optional: Double-E Design dev mode
 
@@ -99,6 +80,29 @@ $env:POWERPRESS_DEV = 1; ./postinstall.ps1
 > [!WARNING]  
 > Do not deploy the `doublee-local-dev` plugin to staging or production sites. It is intended only for local development and may break things and/or pose security risks on live sites.
 
+### Local database
+
+For a fresh local setup:
+
+1. Update the database credentials in the `wp-config.php` file to match your local MySQL/MariaDB instance.
+2. Create a database for the site in your local MySQL/MariaDB instance. In [Laravel Herd Pro](https://herd.laravel.com/), you can ensure the database service is set up and running in the **Services** tab.
+
+3. If using WP-CLI:
+
+   i. Import the database from the command line with:
+   ```powershell
+   wp db import path/to/backup.sql
+   ```
+
+ii. Do a find-and-replace with WP-CLI to update the site URL to match your local development URL:
+```powershell
+wp search-replace 'http://oldsiteurl.com' 'https://myproject.test' --skip-columns=guid
+```
+
+4. If not using WP-CLI:
+
+   i. Do a find-and-replace in the SQL backup file to update the site URL to match your local development URL.
+   ii. Access the web interface (via the Services screen in Herd Pro) to import the SQL file into your local database.
 
 --- 
 ## Packup

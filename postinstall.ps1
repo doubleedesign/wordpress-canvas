@@ -45,6 +45,7 @@ if (Test-Path "wordpress") {
 $scriptLocation = $PSScriptRoot
 $ENV:COMPOSER = "composer.json"
 
+$themes = Get-ChildItem -Path "app\wp-content\themes" -Directory
 $pluginsToComposerUpdate = @(
 	"app\wp-content\plugins\doublee-base-plugin",
 	"app\wp-content\plugins\doublee-breadcrumbs",
@@ -53,20 +54,22 @@ $pluginsToComposerUpdate = @(
 	"app\wp-content\plugins\comet-plugin-blocks"
 )
 
+$packagesToUpdate = ($themes | Select-Object -ExpandProperty FullName) + $packagesToComposerUpdate
+
 $devMode = $Env:POWERPRESS_DEV
 if ($devMode -eq "1") {
-	foreach ($plugin in $pluginsToComposerUpdate) {
-		if (Test-Path $plugin) {
+	foreach ($package in $packagesToUpdate) {
+		if (Test-Path $package) {
 			# If this is a symlinked directory, use its real directory - this helps with path issues when it has its own symlinked dependencies
-			$item = Get-Item $plugin
+			$item = Get-Item $package
 			if ($item.LinkType -eq "SymbolicLink" -or $item.LinkType -eq "Junction") {
-				$plugin = $item.Target
-				Write-Host "Resolved symlink to $( $plugin )" -ForegroundColor Cyan
+				$package = $item.Target
+				Write-Host "Resolved symlink to $( $package )" -ForegroundColor Cyan
 			}
 
 			# When processing the Comet Blocks plugin, also ensure the local core package is up-to-date
-			if ($plugin -eq "app\wp-content\plugins\comet-plugin-blocks") {
-				$corePath = Join-Path (Split-Path $plugin -Parent) "core"
+			if ($package -eq "app\wp-content\plugins\comet-plugin-blocks") {
+				$corePath = Join-Path (Split-Path $package -Parent) "core"
 				if (Test-Path $corePath) {
 					Set-Location $corePath
 					try {
@@ -82,22 +85,22 @@ if ($devMode -eq "1") {
 			}
 
 			# Ensure we are in the plugin directory before proceeding
-			Set-Location $plugin
+			Set-Location $package
 
-			if (Test-Path (Join-Path $plugin "composer.local.json")) {
+			if (Test-Path (Join-Path $package "composer.local.json")) {
 				try {
 					$ENV:COMPOSER = "composer.local.json"
-					Write-Host "Running composer update with local package config for $plugin" -ForegroundColor Cyan
+					Write-Host "Running composer update with local package config for $package" -ForegroundColor Cyan
 					composer update --prefer-source --no-dev
 					composer dump-autoload -o
 
 					if (Test-Path "package.json") {
-						Write-Host "Running npm install for $plugin" -ForegroundColor Cyan
+						Write-Host "Running npm install for $package" -ForegroundColor Cyan
 						npm install
 					}
 				}
 				catch {
-					Write-Host "Error running composer update for $plugin" -ForegroundColor Red
+					Write-Host "Error running composer update for $package" -ForegroundColor Red
 					Write-Host "You might need to run it from its source directory manually to work around symlink issues" -ForegroundColor Yellow
 				}
 				finally {
@@ -107,17 +110,19 @@ if ($devMode -eq "1") {
 			}
 			else {
 				try {
-					Write-Host "Running composer update for $plugin" -ForegroundColor Cyan
-					composer update --prefer-source --no-dev
-					composer dump-autoload -o
+					if (Test-Path "composer.json") {
+						Write-Host "Running composer update for $package" -ForegroundColor Cyan
+						composer update --prefer-source --no-dev
+						composer dump-autoload -o
+					}
 
 					if (Test-Path "package.json") {
-						Write-Host "Running npm install for $plugin" -ForegroundColor Cyan
+						Write-Host "Running npm install for $package" -ForegroundColor Cyan
 						npm install
 					}
 				}
 				catch {
-					Write-Host "Error running composer update for $plugin" -ForegroundColor Red
+					Write-Host "Error running composer update for $package" -ForegroundColor Red
 					Write-Host "You might need to run it from its source directory manually to work around symlink issues" -ForegroundColor Yellow
 				}
 				finally {
@@ -126,7 +131,7 @@ if ($devMode -eq "1") {
 			}
 		}
 		else {
-			Write-Host "$plugin not found, skipping composer update" -ForegroundColor Yellow
+			Write-Host "$package not found, skipping composer update" -ForegroundColor Yellow
 		}
 	}
 }

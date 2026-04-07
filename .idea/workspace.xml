@@ -110,7 +110,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.PowerShell&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -145,6 +145,8 @@
       <workItem from="1775519406569" duration="263000" />
       <workItem from="1775522275130" duration="30000" />
       <workItem from="1775522309417" duration="75000" />
+      <workItem from="1775524557785" duration="692000" />
+      <workItem from="1775528964328" duration="1836000" />
     </task>
     <servers />
   </component>
