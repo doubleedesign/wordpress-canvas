@@ -93,9 +93,8 @@ You can also update the dependencies of your local copies of the Double-E Design
 $env:POWERPRESS_DEV = 1; ./postinstall.ps1
 ```
 
-> [!NOTE]
-> To ensure the Comet Components core package is symlinked within the Comet Components Blocks plugin, you may need to run Composer install/update from its source directory (in the Comet Components monorepo on your machine, not from within this project), using their `composer.local.json` configuration files.
-> Similarly, to ensure the Core package has its dependencies, you may need to run Composer install/update from its source directory.
+> [!IMPORTANT]
+> This script skips dev dependencies in the local copies of the Double-E Design packages, so that the version you're working on is ok to upload to production - it won't take things like unit testing dependencies with it. If you need to use those while working on this project, you can run `composer install` or `composer update` in the local copy of the package you're working on, and then do it again with `--no-dev` to remove the dev dependencies before deploying.
 
 > [!WARNING]  
 > Do not deploy the `doublee-local-dev` plugin to staging or production sites. It is intended only for local development and may break things and/or pose security risks on live sites.
