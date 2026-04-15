@@ -1,5 +1,21 @@
 # Troubleshooting
 
+**Getting published Double-E Design packages instead of local symlinks**
+
+Ensure you set `$ENV:COMPOSER = "composer.dev.json"` before running `composer install` or `composer update` to use the local symlinks. If you don't set this environment variable, it will default to using `composer.json`, which references the published versions of the packages.
+---
+
+```
+No composer.json in current directory
+```
+If you get this error when trying to update dependencies or the autoloader in a local package in the same session that you set the `COMPOSER` environment variable to point to `composer.dev.json`, you can either close the PowerShell session and open a new one, or set it back:
+
+```powershell
+$ENV:COMPOSER = "composer.json"
+```
+...then try your command again.
+
+---
 ```
 The Herd Desktop application is not running. Please start Herd and try again.
 ```
