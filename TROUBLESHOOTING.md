@@ -3,6 +3,7 @@
 **Getting published Double-E Design packages instead of local symlinks**
 
 Ensure you set `$ENV:COMPOSER = "composer.dev.json"` before running `composer install` or `composer update` to use the local symlinks. If you don't set this environment variable, it will default to using `composer.json`, which references the published versions of the packages.
+
 ---
 
 ```
