@@ -5,6 +5,7 @@ if ($useDevMode -eq "y" -or $useDevMode -eq "Y") {
 	$env:COMPOSER = "composer.dev.json"
 	composer update
 	& .\postinstall.ps1
+    & .\update-phpstorm-meta.ps1
 
 	Write-Host "Dependency installation/updates complete." -ForegroundColor Green
 }
@@ -13,6 +14,7 @@ else {
 	$env:POWERPRESS_DEV = 0
 	$env:COMPOSER = "composer.json"
 	composer update --no-dev
+    & .\update-phpstorm-meta.ps1
 
 	Write-Host "Dependency installation/updates complete." -ForegroundColor Green
 	Write-Host "You may need to run composer update and npm install in your project-specific theme and plugin directories." -ForegroundColor Cyan

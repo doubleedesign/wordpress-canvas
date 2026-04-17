@@ -34,13 +34,15 @@ choco install sass
 
 Dependency installation/updates (both Composer and NPM) are largely handled via automated scripts. These also automatically handle using Double-E Design dev mode (described below).
 
-When starting work on a new local copy of this project, or if you haven't worked on it for a while, start with the setup script. There is no need to set the dev environment variable - this one will prompt you. This handles installing WordPress and all dependencies in the project root's `composer.json` (or `composer.dev.json` if you select dev mode).
+When starting work on a new local copy of this project, or if you haven't worked on it for a while, start with the setup script. There is no need to set the dev environment variable - this one will prompt you. This handles installing WordPress and all dependencies in the project root's `composer.json` (or `composer.dev.json` if you select dev mode), and generates a PhpStorm meta file in the project root listing the action and filter hooks from Double-E Design's packages to enable autocompletion for them.
 
 ```powershell
 ./setup.ps1
 ```
 
 To only refresh dependencies in themes and selected plugins, use the post-install script. If you want to use dev mode, set the `POWERPRESS_DEV` environment variable first.
+
+To only regenerate the PhpStorm meta file, run `./update-phpstorm-meta.ps1` directly.
 
 ```powershell
 $env:POWERPRESS_DEV = 1; ./postinstall.ps1
