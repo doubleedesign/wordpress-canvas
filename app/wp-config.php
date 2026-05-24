@@ -87,9 +87,10 @@ $table_prefix = 'wp_';
  */
 define('WP_DEBUG', true);
 define('WP_DEBUG_DISPLAY', false);
-define('WP_DEBUG_LOG', false);
-define('SCRIPT_DEBUG', false); // NOTE: Blocks that use VueJS cause React errors when this is enabled, so only enable it when actively using it for other things
+define('WP_DEBUG_LOG', true);
+define('SCRIPT_DEBUG', false); // NOTE: Blocks that use VueJS cause React errors when script debug is enabled, so only enable it when actively using it for other things
 
+define('WP_AI_SUPPORT', false);
 define('WP_ENVIRONMENT_TYPE', 'local');
 
 if (defined('WP_CLI') && WP_CLI) {
