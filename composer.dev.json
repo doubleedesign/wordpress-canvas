@@ -11,7 +11,7 @@
 	],
 	"require": {
 		"php": ">=8.4",
-		"roots/wordpress": "^6.9",
+		"roots/wordpress": "^7.0",
 		"composer/installers": "^2.0",
 		"doubleedesign/comet-canvas-blocks": "*",
 		"doubleedesign/comet-plugin-blocks": "*",

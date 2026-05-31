@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a9de6ac2e7861a5d10709787f6f5e0a",
+    "content-hash": "b3e25ca77e0a9287f85528f947195acc",
     "packages": [
         {
             "name": "composer/installers",
@@ -183,11 +183,11 @@
         },
         {
             "name": "doubleedesign/comet-calendar",
-            "version": "0.0.4",
+            "version": "0.5.0",
             "dist": {
                 "type": "path",
                 "url": "../comet-components/packages/comet-calendar",
-                "reference": "b5d567000c2ad46d6508e34d21c372ad7a3aa685"
+                "reference": "6df20a710d3744fc7e1650c59319bb86f88f3d78"
             },
             "require": {
                 "php": ">=8.4"
@@ -214,11 +214,11 @@
         },
         {
             "name": "doubleedesign/comet-canvas-blocks",
-            "version": "0.7.0",
+            "version": "0.8.0",
             "dist": {
                 "type": "path",
                 "url": "../comet-components/packages/comet-canvas-blocks",
-                "reference": "83c113020a2acfa126c07252c558ea844f0f0f55"
+                "reference": "db86b36b33e0f695351c8bd8707ecb6e6258dd06"
             },
             "type": "wordpress-theme",
             "autoload": {
@@ -278,11 +278,11 @@
         },
         {
             "name": "doubleedesign/doublee-base-plugin",
-            "version": "4.1.1",
+            "version": "4.2.0",
             "dist": {
                 "type": "path",
                 "url": "../doublee-base-plugin",
-                "reference": "ca7dbe7db2c3012f4a4fc227e7f18de37a5c6f97"
+                "reference": "f0f4468580fa5875d7f7c1baeffecff01198891b"
             },
             "require": {
                 "php": ">=8.3"
@@ -317,11 +317,11 @@
         },
         {
             "name": "doubleedesign/doublee-breadcrumbs",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "dist": {
                 "type": "path",
                 "url": "../doublee-breadcrumbs",
-                "reference": "c78d8583e9df26fb647c2948fa7fee2a56374d74"
+                "reference": "32d83607c0335a87dcb2c0e7266b2a586b017af5"
             },
             "require-dev": {
                 "brain/monkey": "^2.6",
@@ -373,11 +373,11 @@
         },
         {
             "name": "doubleedesign/doublee-tinymce",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "dist": {
                 "type": "path",
                 "url": "../doublee-tinymce",
-                "reference": "0bdb097ea12d7d918df36c0e13c1e43123db5e5d"
+                "reference": "54edb13a1c7eba760a8579094e047fcf1500a872"
             },
             "require": {
                 "ext-dom": "*",
@@ -414,16 +414,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "6.9.1",
+            "version": "6.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
-                "reference": "29e4eb49b2f4c591e39d4eb6705a27cf1ea40e45"
+                "reference": "2fa44383ade9e8ccbb986e95ca70a365c8221eb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/wordpress/zipball/29e4eb49b2f4c591e39d4eb6705a27cf1ea40e45",
-                "reference": "29e4eb49b2f4c591e39d4eb6705a27cf1ea40e45",
+                "url": "https://api.github.com/repos/roots/wordpress/zipball/2fa44383ade9e8ccbb986e95ca70a365c8221eb1",
+                "reference": "2fa44383ade9e8ccbb986e95ca70a365c8221eb1",
                 "shasum": ""
             },
             "require": {
@@ -445,7 +445,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/6.9.1"
+                "source": "https://github.com/roots/wordpress/tree/6.9.4"
             },
             "funding": [
                 {
@@ -453,7 +453,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-23T18:54:22+00:00"
+            "time": "2026-03-09T19:47:29+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -524,23 +524,23 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "6.9.1",
+            "version": "6.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "6.9.1"
+                "reference": "6.9.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/release/wordpress-6.9.1-no-content.zip",
-                "reference": "6.9.1",
-                "shasum": "27121719e788b7c9e35cfcf8984ad8b42bd423d6"
+                "url": "https://downloads.w.org/release/wordpress-6.9.4-no-content.zip",
+                "reference": "6.9.4",
+                "shasum": "8ae812bb54223ef859cd3de37f1c6b1db20e0e6f"
             },
             "require": {
                 "php": ">= 7.2.24"
             },
             "provide": {
-                "wordpress/core-implementation": "6.9.1"
+                "wordpress/core-implementation": "6.9.4"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -591,7 +591,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-02-03T17:39:17+00:00"
+            "time": "2026-03-11T15:49:55+00:00"
         },
         {
             "name": "wpackagist-plugin/autodescription",
@@ -613,6 +613,25 @@
             "time": "2025-12-10T15:47:07+00:00"
         },
         {
+            "name": "wpackagist-plugin/google-site-kit",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/google-site-kit/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-site-kit.zip?timestamp=1777928019"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-site-kit/",
+            "time": "2026-05-04T20:53:39+00:00"
+        },
+        {
             "name": "wpackagist-plugin/ninja-forms",
             "version": "dev-trunk",
             "source": {
@@ -622,14 +641,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.zip?timestamp=1770302763"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.zip?timestamp=1777469117"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ninja-forms/",
-            "time": "2026-02-05T14:46:03+00:00"
+            "time": "2026-04-29T13:25:17+00:00"
         },
         {
             "name": "wpackagist-plugin/simply-disable-comments",
@@ -641,14 +660,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simply-disable-comments.zip?timestamp=1763716172"
+                "url": "https://downloads.wordpress.org/plugin/simply-disable-comments.zip?timestamp=1776609393"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/simply-disable-comments/",
-            "time": "2025-11-21T09:09:32+00:00"
+            "time": "2026-04-19T14:36:33+00:00"
         }
     ],
     "packages-dev": [
@@ -673,6 +692,7 @@
     "stability-flags": {
         "doubleedesign/doublee-local-dev": 20,
         "wpackagist-plugin/autodescription": 20,
+        "wpackagist-plugin/google-site-kit": 20,
         "wpackagist-plugin/ninja-forms": 20,
         "wpackagist-plugin/simply-disable-comments": 20
     },
