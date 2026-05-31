@@ -5,8 +5,17 @@
       <paths name="YOUR_SERVER_IP">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+              <mapping deploy="/" local="$PROJECT_DIR$/app" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/app/wp-content/plugins/doublee-local-dev" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app/wp-content/plugins/doublee-base-plugin/docs" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app/wp-content/plugins/doublee-base-plugin/tests" />
+            <excludedPath local="true" path="$PROJECT_DIR$/app/wp-content/debug.log" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.git" />
+            <excludedPath local="true" path="$PROJECT_DIR$/sql" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
