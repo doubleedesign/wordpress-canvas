@@ -1,0 +1,17 @@
+{
+	"name": "doubleedesign/client-name",
+	"description": "Custom WordPress theme for Client Name",
+	"type": "project",
+	"autoload": {
+		"psr-4": {
+			"Doubleedesign\\ClientTheme\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Double-E Design",
+			"email": "contact@doubleedesign.com.au"
+		}
+	],
+	"require": {}
+}

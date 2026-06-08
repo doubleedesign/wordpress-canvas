@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      '@doubleedesign/animate-into-view':
+        specifier: ^2.0.0
+        version: 2.0.0
+      '@doubleedesign/hover.scss':
+        specifier: https://github.com/doubleedesign/Hover.scss#1.0.2
+        version: https://codeload.github.com/doubleedesign/Hover.scss/tar.gz/e6e68b84e31c2918bac39017c4c454506f1da59e
+
+packages:
+
+  '@doubleedesign/animate-into-view@2.0.0':
+    resolution: {integrity: sha512-gv+M9GFx/c09FYQ/AvErgYx//HUOva17Q+6/nusY3YhoCuaKvo65GkLCsncQytusKhkV81xoZB6OWx6WCKUaLw==}
+
+  '@doubleedesign/hover.scss@https://codeload.github.com/doubleedesign/Hover.scss/tar.gz/e6e68b84e31c2918bac39017c4c454506f1da59e':
+    resolution: {tarball: https://codeload.github.com/doubleedesign/Hover.scss/tar.gz/e6e68b84e31c2918bac39017c4c454506f1da59e}
+    version: 1.0.0
+
+snapshots:
+
+  '@doubleedesign/animate-into-view@2.0.0': {}
+
+  '@doubleedesign/hover.scss@https://codeload.github.com/doubleedesign/Hover.scss/tar.gz/e6e68b84e31c2918bac39017c4c454506f1da59e': {}

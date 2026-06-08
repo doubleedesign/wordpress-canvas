@@ -1,0 +1,32 @@
+// This file is separate so that the Comet Components PHP code can load the compiled version of this to process colours
+// without loading and processing larger files than necessary.
+$colors: (
+	'primary': #657a85,
+	'secondary': #bdc9cf,
+	'accent': #3f2c3e,
+	'info': #657a85,
+	'warning': #f9c971,
+	'success': #005351,
+	'error': #842934,
+	'light': #f0fbff,
+	'dark': #2a3439,
+	'white': #ffffff
+);
+
+:root {
+	--color-primary: #{map-get($colors, primary)};
+	--color-secondary: #{map-get($colors, secondary)};
+	--color-accent: #{map-get($colors, accent)};
+	--color-warning: #{map-get($colors, warning)};
+	--color-success: #{map-get($colors, success)};
+	--color-info: #{map-get($colors, info)};
+	--color-error: #{map-get($colors, error)};
+	--color-light: #{map-get($colors, light)};
+	--color-dark: #{map-get($colors, dark)};
+	--color-white: #fff;
+	--color-black: #000;
+
+
+	// Default gradients are 50/50 and will adopt the above colour vars.
+	// You can override them here as needed though.
+}

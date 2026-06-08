@@ -1,0 +1,22 @@
+:root {
+  --font-family-body: '';
+  --font-family-accent: '';
+}
+
+:root {
+  --color-primary: #657a85;
+  --color-secondary: #bdc9cf;
+  --color-accent: #3f2c3e;
+  --color-warning: #f9c971;
+  --color-success: #005351;
+  --color-info: #657a85;
+  --color-error: #842934;
+  --color-light: #f0fbff;
+  --color-dark: #2a3439;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+@layer theme-common {}
+
+/*# sourceMappingURL=common.css.map */
