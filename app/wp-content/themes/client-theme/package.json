@@ -5,6 +5,6 @@
 	"author": "Double-E Design",
 	"devDependencies": {
 		"@doubleedesign/animate-into-view": "^2.0.0",
-		"@doubleedesign/hover.scss": "https://github.com/doubleedesign/Hover.scss#1.0.2b"
+		"@doubleedesign/animate-on-hover": "^0.0.1"
 	}
 }
