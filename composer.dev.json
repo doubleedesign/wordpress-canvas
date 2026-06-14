@@ -21,10 +21,10 @@
 		"doubleedesign/acf-advanced-image-field": "*",
 		"doubleedesign/doublee-tinymce": "*",
 		"doubleedesign/doublee-ninja-markup": "*",
-		"wpackagist-plugin/ninja-forms": "dev-trunk",
-		"wpackagist-plugin/autodescription": "dev-trunk",
-		"wpackagist-plugin/simply-disable-comments": "dev-trunk",
-		"wpackagist-plugin/google-site-kit": "dev-trunk"
+		"wpackagist-plugin/ninja-forms": "*",
+		"wpackagist-plugin/autodescription": "*",
+		"wpackagist-plugin/simply-disable-comments": "*",
+		"wpackagist-plugin/google-site-kit": "*"
 	},
 	"require-dev": {
 		"doubleedesign/doublee-local-dev": "dev-master"
@@ -44,63 +44,63 @@
 		},
 		{
 			"type": "path",
-			"url": "../comet-components/packages/comet-plugin-blocks",
+			"url": "../../PhpStormProjects/comet-components/packages/comet-plugin-blocks",
 			"options": {
 				"symlink": true
 			}
 		},
 		{
 			"type": "path",
-			"url": "../comet-components/packages/comet-canvas-blocks",
+			"url": "../../PhpStormProjects/comet-components/packages/comet-canvas-blocks",
 			"options": {
 				"symlink": true
 			}
 		},
 		{
 			"type": "path",
-			"url": "../comet-components/packages/comet-calendar",
+			"url": "../../PhpStormProjects/comet-components/packages/comet-calendar",
 			"options": {
 				"symlink": true
 			}
 		},
 		{
 			"type": "path",
-			"url": "../doublee-breadcrumbs",
+			"url": "../../PhpStormProjects/doublee-breadcrumbs",
 			"options": {
 				"symlink": true
 			}
 		},
 		{
 			"type": "path",
-			"url": "../doublee-base-plugin",
+			"url": "../../PhpStormProjects/doublee-base-plugin",
 			"options": {
 				"symlink": true
 			}
 		},
 		{
 			"type": "path",
-			"url": "../acf-advanced-image-field",
+			"url": "../../PhpStormProjects/acf-advanced-image-field",
 			"options": {
 				"symlink": true
 			}
 		},
 		{
 			"type": "path",
-			"url": "../doublee-tinymce",
+			"url": "../../PhpStormProjects/doublee-tinymce",
 			"options": {
 				"symlink": true
 			}
 		},
 		{
 			"type": "path",
-			"url": "../doublee-ninja-markup",
+			"url": "../../PhpStormProjects/doublee-ninja-markup",
 			"options": {
 				"symlink": true
 			}
 		},
 		{
 			"type": "path",
-			"url": "../doublee-local-dev",
+			"url": "../../PhpStormProjects/doublee-local-dev",
 			"options": {
 				"symlink": true
 			}

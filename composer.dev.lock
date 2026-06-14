@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "264ec74b0d41771280940efecfbdc8a9",
+    "content-hash": "e2efc5a484ae794d5c797c4b970ec392",
     "packages": [
         {
             "name": "composer/installers",
@@ -282,7 +282,7 @@
             "dist": {
                 "type": "path",
                 "url": "../doublee-base-plugin",
-                "reference": "2dc6810a39efd1eb74467672e5ef4c287683729d"
+                "reference": "1bb72818b3449cd5e8c9cf346625fbabf370bbdc"
             },
             "require": {
                 "php": ">=8.3"
@@ -595,79 +595,75 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "dev-trunk",
+            "version": "5.1.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "trunk"
+                "reference": "tags/5.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.zip?timestamp=1765381627"
+                "url": "https://downloads.wordpress.org/plugin/autodescription.5.1.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/autodescription/",
-            "time": "2025-12-10T15:47:07+00:00"
+            "homepage": "https://wordpress.org/plugins/autodescription/"
         },
         {
             "name": "wpackagist-plugin/google-site-kit",
-            "version": "dev-trunk",
+            "version": "1.180.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-site-kit/",
-                "reference": "trunk"
+                "reference": "tags/1.180.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-site-kit.zip?timestamp=1780339159"
+                "url": "https://downloads.wordpress.org/plugin/google-site-kit.1.180.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/google-site-kit/",
-            "time": "2026-06-01T18:39:19+00:00"
+            "homepage": "https://wordpress.org/plugins/google-site-kit/"
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
-            "version": "dev-trunk",
+            "version": "3.14.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ninja-forms/",
-                "reference": "trunk"
+                "reference": "tags/3.14.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.zip?timestamp=1780927536"
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.14.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/ninja-forms/",
-            "time": "2026-06-08T14:05:36+00:00"
+            "homepage": "https://wordpress.org/plugins/ninja-forms/"
         },
         {
             "name": "wpackagist-plugin/simply-disable-comments",
-            "version": "dev-trunk",
+            "version": "0.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/simply-disable-comments/",
-                "reference": "trunk"
+                "reference": "tags/0.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simply-disable-comments.zip?timestamp=1776609393"
+                "url": "https://downloads.wordpress.org/plugin/simply-disable-comments.0.3.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simply-disable-comments/",
-            "time": "2026-04-19T14:36:33+00:00"
+            "homepage": "https://wordpress.org/plugins/simply-disable-comments/"
         }
     ],
     "packages-dev": [
@@ -690,11 +686,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "doubleedesign/doublee-local-dev": 20,
-        "wpackagist-plugin/autodescription": 20,
-        "wpackagist-plugin/google-site-kit": 20,
-        "wpackagist-plugin/ninja-forms": 20,
-        "wpackagist-plugin/simply-disable-comments": 20
+        "doubleedesign/doublee-local-dev": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

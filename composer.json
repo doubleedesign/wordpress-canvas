@@ -21,10 +21,12 @@
 		"doubleedesign/acf-advanced-image-field": "dev-master",
 		"doubleedesign/doublee-tinymce": "dev-master",
 		"doubleedesign/doublee-ninja-markup": "dev-master",
-		"wpackagist-plugin/ninja-forms": "dev-trunk",
-		"wpackagist-plugin/autodescription": "dev-trunk",
-		"wpackagist-plugin/simply-disable-comments": "dev-trunk",
-		"wpackagist-plugin/google-site-kit": "dev-trunk"
+		"wpackagist-plugin/ninja-forms": "*",
+		"wpackagist-plugin/autodescription": "*",
+		"wpackagist-plugin/simply-disable-comments": "*",
+		"wpackagist-plugin/google-site-kit": "*",
+		"ext-libxml": "*",
+		"ext-dom": "*"
 	},
 	"replace": {
 		"doubleedesign/comet-components-core": "*"
