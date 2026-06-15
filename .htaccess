@@ -1,0 +1,31 @@
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+
+# Disable browser caching for logged-in users
+# because otherwise WP updates don't show up for several minutes
+<IfModule mod_headers.c>
+    SetEnvIf Cookie "wordpress_logged_in_[^=]+=" logged_in=true
+    SetEnvIf Cookie "wordpress_sec_[^=]+=" logged_in=true
+
+    Header set Cache-Control "no-cache, no-store, must-revalidate" env=logged_in
+    Header set Pragma "no-cache" env=logged_in
+    Header set Expires 0 env=logged_in
+</IfModule>
+
+<IfModule LiteSpeed> 
+    CacheDisable public /
+    CacheDisable private /
+</IfModule> 
