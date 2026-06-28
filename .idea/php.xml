@@ -7,7 +7,7 @@
     </laravel_pint_settings>
   </component>
   <component name="LaravelPintOptionsConfiguration">
-    <option name="pintJsonPath" value="$PROJECT_DIR$/app/wp-content/plugins/doublee-base-plugin/pint.json" />
+    <option name="pintJsonPath" value="$PROJECT_DIR$/../pint.json" />
     <option name="reformatOnlyUncommittedFiles" value="true" />
   </component>
   <component name="MessDetectorOptionsConfiguration">
